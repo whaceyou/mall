@@ -1,0 +1,5 @@
+# 项目排除路径
+/代码/前端/vue2/node_modules/
+.idea
+**/*.iml
+/**/*.ignore
