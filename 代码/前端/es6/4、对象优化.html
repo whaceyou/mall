@@ -17,9 +17,9 @@
             language: ['java', 'js', 'css']
         }
 
-        console.log(Object.keys(person));//["name", "age", "language"]
-        console.log(Object.values(person));//["jack", 21, Array(3)]
-        console.log(Object.entries(person));//[Array(2), Array(2), Array(2)]
+        console.log(Object.keys(person));//["name", "age", "language"]
+        console.log(Object.values(person));//["jack", 21, Array(3)]
+        console.log(Object.entries(person));//[Array(2), Array(2), Array(2)]
 
         const target = { a: 1 };
         const source1 = { b: 2 };
@@ -28,7 +28,7 @@
         //{a:1,b:2,c:3}
         Object.assign(target, source1, source2);
 
-        console.log(target);//["name", "age", "language"]
+        console.log(target);//["name", "age", "language"]
 
         //2）、声明对象简写
         const age = 23
@@ -41,7 +41,7 @@
         //3）、对象的函数属性简写
         let person3 = {
             name: "jack",
-            // 以前：
+            // 以前：
             eat: function (food) {
                 console.log(this.name + "在吃" + food);
             },
@@ -60,16 +60,16 @@
 
         //4）、对象拓展运算符
 
-        // 1、拷贝对象（深拷贝）
+        // 1、拷贝对象（深拷贝）
         let p1 = { name: "Amy", age: 15 }
         let someone = { ...p1 }
-        console.log(someone)  //{name: "Amy", age: 15}
+        console.log(someone)  //{name: "Amy", age: 15}
 
-        // 2、合并对象
+        // 2、合并对象
         let age1 = { age: 15 }
         let name1 = { name: "Amy" }
-        let p2 = {name:"zhangsan"}
-        p2 = { ...age1, ...name1 } 
+        let p2 = {name:"zhangsan"}
+        p2 = { ...age1, ...name1 } 
         console.log(p2)
 
         
